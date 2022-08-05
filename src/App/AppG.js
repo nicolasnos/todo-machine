@@ -7,6 +7,7 @@ import { TodoList } from '../TodoList/TodoList';
 import { TodoItem } from '../TodoItem/TodoItem';
 import { Modal } from '../Modal'
 import { TodoForm } from "../TodoForm/todoForm";
+import { MyLoader } from "../MyLoader/MyLoader";
 
 function AppG () {
   const {error, 
@@ -26,7 +27,7 @@ function AppG () {
            
             <TodoList>
             {error &&  <p>hay un error, como raro</p>}
-            {loading &&  <p>estamos trabajando para darte tus tareas</p>}
+            {loading &&  <MyLoader/>}
             {(!loading && !searchedTodos) && <p>creea tu tarea</p>}
   
             {searchedTodos.map(todo =>(
