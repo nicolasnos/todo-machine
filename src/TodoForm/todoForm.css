@@ -58,6 +58,11 @@ form {
     border: none;
     font-family: 'Montserrat';
   }
+
+  .TodoForm-button:hover {
+    background-color: #507479;
+    transition: 400ms;
+  }
   
   .TodoForm-button-add {
     background-color: #61DAFA;
